@@ -1,0 +1,162 @@
+https://codeclubprojects.org/en-GB/webdev/magazine/
+
+------
+
+<! index (page 1) >
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img id="greenrobot" src="greenrobot.png">
+
+  <h1>My Magazine</h1>
+<div class="column1">
+	<div class="item">
+	  <h2>Top 5 Cakes</h2>
+	  <ol>
+	    <li>Chocolate Eclair</li>
+	    <li>Victoria Sponge</li>
+	    <li>Iced Bun</li>
+	    <li>Lemon Drizzle</li>
+	    <li>Jam Doughnut</li>
+	  </ol>
+	</div>
+	<div class="item">
+    <div class="sticker" id="robots"> I &lt;3 <br>Robots</div>
+  </div>
+</div>
+<div class="column2">
+  <div class="item">
+    <h2>Cute Kitten!</h2>
+    <img class="photo" src="kitten.jpg"/>
+  </div>
+  
+  <div class="item"><a href="page2.html">Page 2</a></div>
+</div>
+
+------
+
+<! page 2 >
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Magazine - Page 2</h1>
+<div class="column1">
+	<div class="item">
+	  <h2>My Hobbies</h2>
+	  <ul>
+	    <li>Coding</li>
+	    <li>Swimming</li>
+	    <li>Photography</li>
+	  </ul>
+	</div>
+	
+	<div class="item">
+	  <h2>Website Tip</h2>
+	  We love the <a href="http://scratch.mit.edu">Scratch website</a>.
+	</div>
+	<div class="item"><a href="index.html">Page 1</a></div>
+</div>
+<div class="column2">
+  <div class="item">
+	  <h2>Recipe</h2>
+	  <a href="https://trinket.io/html/c0fd9b40cd"><img src="recipe-final.png"/></a>
+	</div>
+</div>  
+<img id="spacerobot" src="spacerobot.png">
+</body>
+
+------
+
+ /* style.css */
+
+body {		
+	background: linear-gradient(to bottom right, lemonchiffon, white);
+	padding: 15px;
+	font-family: Verdana;
+}
+	
+h1 {
+	text-align: center;
+	color: white;
+	background: teal;
+	padding: 5px;
+}
+
+.column1{
+	width: 48%;
+	float: left;
+}
+
+.column2 {
+	width: 48%;
+	float: right;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2 {
+	color: white;
+	background: teal;
+	padding: 5px;
+	margin: 0px 0px 10px 0px;
+	box-shadow: 2px 2px 2px gray;
+	text-align: center;
+	
+}
+
+.item  {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 3px dashed teal;
+}
+
+.photo {
+	box-shadow: 4px 4px 4px gray;
+	transform: rotate(10deg);
+}
+
+#robots {
+  font-size: 30px;
+  color: white;
+  background: linear-gradient(green, yellow, orange, red, purple, blue);
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#greenrobot {
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  animation: slide 10s infinite;
+}
+
+@keyframes slide {
+  0% { left: -200px }
+  50% { left: 0 }
+  100% { left: -200px }
+}
+
+#spacerobot {
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  animation: across 5s infinite alternate;
+}
+
+@keyframes across {
+  0% { left: 0 }
+  100% { left: 90% }
+}
+	
+------
+------
+
+
+
